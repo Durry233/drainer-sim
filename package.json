@@ -1,0 +1,10 @@
+{
+  "name": "drainer-sim",
+  "version": "1.0.0",
+  "main": "drainer.js",
+  "dependencies": {
+    "ethers": "^6.13.1",
+    "axios": "^1.7.2",
+    "csv-parser": "^3.0.0"
+  }
+}
