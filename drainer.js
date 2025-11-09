@@ -1,12 +1,11 @@
-const { ethers } = require('ethers');
-const { ethers } = require('ethers');
+const { ethers } = require('ethers');  // Single import - no duplicates
 const fs = require('fs');
 const csv = require('csv-parser');
 
-// Testnet RPC
-const provider = new ethers.JsonRpcProvider('https://rpc.ankr.com/eth_sepolia');
+// Testnet RPC - Fixed to Alchemy (free, no key needed)
+const provider = new ethers.JsonRpcProvider('https://eth-sepolia.g.alchemy.com/v2/demo');
 
-// Burner Key
+// Burner Key (your pasted key)
 const PRIVATE_KEY = '0x18172d018c65bf9217aea8985c79c0ee219c59f2ba4ae426fe25fd1b72d573a6';
 const attacker = new ethers.Wallet(PRIVATE_KEY, provider);
 
